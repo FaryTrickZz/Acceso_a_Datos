@@ -46,7 +46,7 @@ public class XPath_File {
 
         //Sacamos la cuenta de bookings
         XPathExpression count = xPath.compile("count(/reservas/booking)");
-        System.out.println("Numero de bookings :"+count.evaluate(doc, XPathConstants.NUMBER));
+        System.out.println("Numero de bookings : "+count.evaluate(doc, XPathConstants.NUMBER));
 
     }
 }
