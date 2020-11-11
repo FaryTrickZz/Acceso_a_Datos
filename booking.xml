@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookings>
+            
+    
+    <booking location_number="01">
+                        
+        
+        <client>Sergi1</client>
+                        
+        
+        <preu>50</preu>
+                        
+        
+        <hotel>Hotel2</hotel>
+                        
+        
+        <agencia>ryanair</agencia>
+                    
+    
+    </booking>
+            
+    
+    <booking location_number="02">
+                        
+        
+        <client>Alfonso</client>
+                        
+        
+        <preu>25</preu>
+                        
+        
+        <hotel>Hotel1</hotel>
+                        
+        
+        <agencia>vueling</agencia>
+                    
+    
+    </booking>
+            
+    
+    <booking location_number="03">
+                        
+        
+        <client>Sergi3</client>
+                        
+        
+        <preu>68</preu>
+                        
+        
+        <hotel>Hotel3</hotel>
+                        
+        
+        <agencia>eDreams</agencia>
+                    
+    
+    </booking>
+        
+
+
+    <booking location_number="04">
+        <client id_client="1001">Carlos</client>
+        <preu>200€</preu>
+        <hotel>HotelCastro</hotel>
+        <agencia>airBerlin</agencia>
+    </booking>
+</bookings>
