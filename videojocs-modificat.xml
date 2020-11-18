@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<videojocs>
+
+    <Videojoc id="01">
+        <Titol> </Titol>
+        <Creador>Supercell</Creador>
+        <Sinopsis>PiumPium</Sinopsis>
+        <Plataforma>Mobil</Plataforma>
+        <Any>2001</Any>
+    </Videojoc>
+    
+    <Videojoc id="02">
+        <Titol>League of Legends</Titol>
+        <Creador>Riot</Creador>
+        <Sinopsis>MOBA</Sinopsis>
+        <Plataforma>PC</Plataforma>
+        <Any>1999</Any>
+    </Videojoc>
+
+    <Videojoc id="03">
+        <Titol>COD</Titol>
+        <Creador>Activision</Creador>
+        <Sinopsis>FPS</Sinopsis>
+        <Plataforma>Multi</Plataforma>
+        <Any>1899</Any>
+    </Videojoc>
+
+    <Videojoc id="04">
+        <Titol>Smite</Titol>
+        <Creador>Hirez</Creador>
+        <Sinopsis>MOBA</Sinopsis>
+        <Plataforma>Multi</Plataforma>
+        <Any>2010</Any>
+    </Videojoc>
+
+    <Videojoc id="05">
+        <Titol>FIFA21</Titol>
+        <Creador>EA</Creador>
+        <Sinopsis>Deportes</Sinopsis>
+        <Plataforma>Multi</Plataforma>
+        <Any>2020</Any>
+    </Videojoc>
+
+</videojocs>

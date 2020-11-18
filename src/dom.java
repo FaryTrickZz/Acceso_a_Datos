@@ -19,8 +19,6 @@ import org.xml.sax.SAXException;
 
 public class dom {
 
-
-
     public static void main(String[] args) throws ParserConfigurationException, SAXException, IOException, TransformerException {
 
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
@@ -80,7 +78,7 @@ public class dom {
         doc.getLastChild().appendChild(nodeBooking);
 
         //Modificamos un elemento
-        ((Element)doc.getLastChild()).getElementsByTagName("client").item(4).setTextContent("Alonso");
+        ((Element)doc.getLastChild()).getElementsByTagName("client").item(3).setTextContent("Alonso");
 
         //guardar archivo
         TransformerFactory tf = TransformerFactory.newInstance();

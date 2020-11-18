@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<reservas>
+    	
+    <booking location_number="01">
+        		
+        <client>Paco</client>
+        		
+        <preu>75€</preu>
+        		
+        <hotel>Hotel1</hotel>
+        		
+        <agencia>eDreams</agencia>
+        	
+    </booking>
+    	
+    <booking location_number="02">
+        		
+        <client>Alfredo</client>
+        		
+        <preu>50€</preu>
+        		
+        <hotel>Hotel1</hotel>
+        		
+        <agencia>eDreams</agencia>
+        	
+    </booking>
+    	
+    <booking location_number="03">
+        		
+        <client>Stitch</client>
+        		
+        <preu>100€</preu>
+        		
+        <hotel>Hotel1</hotel>
+        		
+        <agencia>eDreams</agencia>
+        	
+    </booking>
+    
+    <booking location_number="04">
+        <client id_client="1001">Alonso</client>
+    </booking>
+</reservas>

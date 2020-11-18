@@ -21,7 +21,6 @@ public class XPath_File {
         Document doc = db.parse(new File("bookings.xml"));
 
         //Variables XPath
-        XPathFactory xpathFactory = XPathFactory.newInstance();
         XPath xPath = XPathFactory.newInstance().newXPath();
 
         //Buscamos los nodos client
@@ -35,7 +34,7 @@ public class XPath_File {
             System.out.println("Client "+i+" : "+ element.getTextContent());
         }
 
-        //Busca el elemento bookine con la location number especifica
+        //Busca el elemento booking con la location number especifica
         XPathExpression loc01 = xPath.compile("/reservas/booking[@location_number='01']");
         //Get element
         Element element = (Element)loc01.evaluate(doc, XPathConstants.NODE);
