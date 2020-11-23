@@ -19,7 +19,7 @@ public class xPath_BernatAparicio {
     public static Document cargarXML() throws IOException, SAXException, ParserConfigurationException {
         DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
         DocumentBuilder db = dbf.newDocumentBuilder();
-        Document doc = db.parse(new File("videojocs-modificat.xml"));
+        Document doc = db.parse(new File("videojocs.xml"));
         return doc;
     }
 
@@ -132,7 +132,7 @@ public class xPath_BernatAparicio {
 
         //contarNumeroJuegos(doc, "League of Legends");
 
-        //mostrarContenidoAPArtirDeTtiulo(doc, "COD");
+        mostrarContenidoAPArtirDeTtiulo(doc, "COD");
 
     }
 }
