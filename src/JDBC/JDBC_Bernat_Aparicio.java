@@ -1,3 +1,5 @@
+package JDBC;
+
 import java.sql.*;
 import java.util.TimeZone;
 
@@ -255,10 +257,10 @@ public class JDBC_Bernat_Aparicio {
     public static void main(String[] args){
         forNameDriver();
         //inserirDepartament(80, "VENTAS", "SPAIN");
-        //inserirDEpartamentObj(new departament(60, "RRHH", "FRANCE"));
+        //inserirDEpartamentObj(new JDBC.departament(60, "RRHH", "FRANCE"));
         //departaments();
         //departamentByDeptno(50);
-        //updateDepartament(new departament(60, "COMPRAS", "PORTUGAL"));
+        //updateDepartament(new JDBC.departament(60, "COMPRAS", "PORTUGAL"));
         //deleteDepartamentByDeptno(50);
         //deleteDepartamentFilesAfectades(60);
         //modificardnameByDeptnoDname(60, "PIPAS");

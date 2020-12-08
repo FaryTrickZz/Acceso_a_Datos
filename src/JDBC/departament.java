@@ -1,3 +1,5 @@
+package JDBC;
+
 public class departament {
 
     private int deptno;
