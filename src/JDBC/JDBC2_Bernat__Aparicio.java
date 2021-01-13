@@ -121,6 +121,10 @@ public class JDBC2_Bernat__Aparicio {
             conn = DriverManager.getConnection(url, user, password);
             DatabaseMetaData infoBD = conn.getMetaData();
             String user = infoBD.getUserName();
+            ResultSet x = infoBD.getTables(conn.getCatalog(), "demo", "dept", null);
+            while (x.next()){
+                System.out.println(x.getString("REMARKS\t"));
+            }
             String driver = infoBD.getDriverName();
             String gestor = infoBD.getDatabaseProductName();
             System.out.println(user + driver + gestor);
