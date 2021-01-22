@@ -23,6 +23,7 @@ public class JDBC3_Bernat_Aparicio {
         }
     }
 
+    //Muestra informacion detallada de las tablas
     public static void mostrarTablas() {
         // Trabajo con base de datos
         try {
@@ -49,6 +50,7 @@ public class JDBC3_Bernat_Aparicio {
         }
     }
 
+    //Muestra todas las funciones y procedimientos
     public static void mostrarFuncionesyProcedimentos() {
         // Trabajo con base de datos
         try {
@@ -77,6 +79,7 @@ public class JDBC3_Bernat_Aparicio {
         }
     }
 
+    //Muestra informacion definida de una tabla en concreto
     public static void mostrarInformacionTabla(String squema, String table) {
         // Trabajo con base de datos
         try {
@@ -104,6 +107,7 @@ public class JDBC3_Bernat_Aparicio {
         }
     }
 
+    //Muesra la Primary key de una tabla
     public static void mostrarPKdeBD(String squema, String table) {
         // Trabajo con base de datos
         try {
@@ -130,6 +134,7 @@ public class JDBC3_Bernat_Aparicio {
         }
     }
 
+    //Muestra la fk de una tabla
     public static void mostrarFKdetabla(String squema, String table) {
         // Trabajo con base de datos
         try {
@@ -157,12 +162,25 @@ public class JDBC3_Bernat_Aparicio {
         }
     }
 
-    public static void daw() {
+    //Devuelve informacion de una tabla detallada a traves de una consulta
+    public static void informacionConConsulta(String consulta) {
         // Trabajo con base de datos
         try {
             conn = DriverManager.getConnection(url, user, password);
             stmt = conn.createStatement();
-            stmt.executeUpdate("");
+            rs = stmt.executeQuery(consulta);
+            String TableName = rs.getMetaData().getTableName(1);
+            String SchemName = rs.getMetaData().getSchemaName(1);
+            DatabaseMetaData infoBD = conn.getMetaData();
+            rs.close();
+
+            rs = infoBD.getColumns(conn.getCatalog(), SchemName, TableName, null);
+            System.out.println("\n");
+            while (rs.next()){
+                System.out.println("Nombre: "+rs.getString("TABLE_NAME") + " Tipo: " + rs.getString("TYPE_NAME") + " Tamaño: " + rs.getString("COLUMN_SIZE") + " Is nullable: " + rs.getString("IS_NULLABLE"));
+            }
+
+            rs.close();
             stmt.close();
         } catch (SQLException e) {
             e.printStackTrace();

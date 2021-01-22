@@ -23,6 +23,7 @@ public class JDBC2_Bernat__Aparicio {
         }
     }
 
+    //Llama a un procedimiento que actualiza un departamento
     public static void actDepPrecedure(int numDept, String nomDept) {
         // Trabajo con base de datos
         try {
@@ -43,6 +44,7 @@ public class JDBC2_Bernat__Aparicio {
         }
     }
 
+    //Llama a un procedimiento que devuelve un departamento y lo transforma en un objeto
     public static Object getObjectProcedure(int numDept) {
         String dname = "";
         String loc = "";
@@ -70,6 +72,7 @@ public class JDBC2_Bernat__Aparicio {
         return dept;
     }
 
+    //Llama a un procedimiento que actualiza el sueldo de un empleado
     public static void actSAL(int deptno, int aumento) {
         // Trabajo con base de datos
         try {
@@ -90,6 +93,7 @@ public class JDBC2_Bernat__Aparicio {
         }
     }
 
+    //Actualiza el sueldo de varios empleados
     public static void actSALRS(int deptno, int aumento) {
         // Trabajo con base de datos
         try {
@@ -115,6 +119,7 @@ public class JDBC2_Bernat__Aparicio {
         }
     }
 
+    //Proporciona diferente informacion de la BD
     public static void infoBD() {
         // Trabajo con base de datos
         try {
